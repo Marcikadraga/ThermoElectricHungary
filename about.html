@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thermo</title>
+</head>
+<body>
+    <style>
+        * {box-sizing: border-box;}
+        
+        body { 
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        #navbar {
+          overflow: hidden;
+          background-color: #f1f1f1;
+          padding: 90px 10px;
+          transition: 0.4s;
+          position: fixed;
+          width: 100%;
+          top: 0;
+          z-index: 99;
+        }
+        
+        #navbar a {
+          float: left;
+          color: black;
+          text-align: center;
+          padding: 12px;
+          text-decoration: none;
+          font-size: 18px; 
+          line-height: 25px;
+          border-radius: 4px;
+        }
+        
+        #navbar #logo {
+          font-size: 35px;
+          font-weight: bold;
+          transition: 0.4s;
+        }
+        
+        #navbar a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+        
+        #navbar a.active {
+          background-color: dodgerblue;
+          color: white;
+        }
+        
+        #navbar-right {
+          float: right;
+        }
+        
+      .image { 
+        position: relative; 
+        width: 100%; /* for IE 6 */
+      }
+
+    @media screen and (max-width: 580px) {
+      #navbar {
+        padding: 20px 10px !important;
+      }
+      #navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+      #navbar-right {
+        float: none;
+      }
+    }
+    
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color:  #ddd;;
+      color: black;
+      text-align: center;
+    }
+.fa {
+padding: 20px;
+font-size: 20px;
+width: 90px;
+text-align: center;
+text-decoration: none;
+margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+    
+    a{
+      font-family: "Lucida Console"
+    }
+        
+      
+        </style>
+    <div id="navbar">
+        <a href="#default" id="logo">Thermo Electric Hungary</a>
+        <div id="navbar-right">
+          <a  href="index.html">Főoldal</a>
+          <a  href="price.html">Áraink</a>
+          <a href="contacts.html">Kapcsolat</a>
+          <a class="active" href="about.html">Rólunk</a>
+        </div>
+      </div>
+      <div style="text-align: center;padding-top: 220px;font-size: 20px;
+      margin: 300px;">
+    <p style="font-family: Lucida Console", Courier, monospace;">
+        Teljeskörű fűtés és gázszerelés. Gázkazánok, cirkók, konvektorok, bojlerek javítása, cseréje. Minden készüléktípusra és márkára megoldást nyújtunk, akár azonnal is. Budapesten és Pest megye egyes részein kereshetnek bátran.<br>
+        Minden kazántípus és minden márkával foglalkozunk. Legyen az ismertebb (Beretta, Ariston, Junkers, FÉG, Bosch, Saunier) vagy kevésbé ismert, hivjon minket bizalommal.<br>
+        
+        Házhoz megy a segítség!
+        
+        
+    </p>
+    
+
+    <!-- <div class="footer">
+        <p style="font-size: 10;">Thermo Electric Hungary</p>
+    </div> -->
+    <script>
+        // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            document.getElementById("navbar").style.padding = "30px 10px";
+            document.getElementById("logo").style.fontSize = "25px";
+          } else {
+            document.getElementById("navbar").style.padding = "80px 10px";
+            document.getElementById("logo").style.fontSize = "35px";
+          }
+        }
+        </script>
+</body>
+</html>
